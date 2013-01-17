@@ -25,7 +25,7 @@ package j2as3.collection {
         
         public function clear():Object {
             for (var key:String in this)
-                this[key] = null;
+				remove(key);
             count = 0;
             return this;
         }

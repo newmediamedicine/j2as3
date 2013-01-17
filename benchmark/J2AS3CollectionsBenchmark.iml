@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="J2AS3CollectionsBenchmark">
+    <configurations>
+      <configuration name="J2AS3CollectionsBenchmark" target-platform="Desktop" main-class="J2AS3CollectionsBenchmark" output-file="J2AS3CollectionsBenchmark.swf" output-folder="$MODULE_DIR$/bin-debug">
+        <dependencies>
+          <entries>
+            <entry library-id="6cd03ec6-880a-44da-a90e-05c08ddde015">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-id="ce8eb7fb-aafb-411e-be6e-f6ca75bab929">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="J2AS3Collections" build-configuration-name="Flex Library">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.6.0" />
+        </dependencies>
+        <compiler-options>
+          <map>
+            <entry key="compiler.locale" value="en_US" />
+          </map>
+          <option name="additionalOptions" value="-debug=false" />
+        </compiler-options>
+        <packaging-air-desktop package-file-name="J2AS3CollectionsBenchmark" />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/bin-debug" />
+    </content>
+    <orderEntry type="jdk" jdkName="4.6.0" jdkType="Flex SDK Type (new)" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="6cd03ec6-880a-44da-a90e-05c08ddde015" />
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/libs" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/libs" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library type="flex">
+        <properties id="ce8eb7fb-aafb-411e-be6e-f6ca75bab929" />
+        <CLASSES>
+          <root url="jar://C:/work/experiments/flex/as3ds/bin/as3ds.swc!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="J2AS3Collections" exported="" />
+  </component>
+</module>
+

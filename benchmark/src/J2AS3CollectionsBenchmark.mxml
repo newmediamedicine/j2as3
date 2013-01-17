@@ -22,8 +22,8 @@ $Id: J2AS3CollectionsBenchmark.mxml 23 2009-03-04 18:42:25Z mslinn $  -->
 
 	<mx:Script>
 		<![CDATA[
-		    import j2as3.util.StopWatch;
-            import collection.HashMap;
+			import j2as3.collection.HashMap;
+			import j2as3.util.StopWatch;
             import mx.formatters.NumberFormatter;
 		  
 			private var stopWatch:StopWatch = new StopWatch();

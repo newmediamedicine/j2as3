@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/converter/J2AS3.iml" filepath="$PROJECT_DIR$/converter/J2AS3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collections/J2AS3Collections.iml" filepath="$PROJECT_DIR$/collections/J2AS3Collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/benchmark/J2AS3CollectionsBenchmark.iml" filepath="$PROJECT_DIR$/benchmark/J2AS3CollectionsBenchmark.iml" />
+    </modules>
+  </component>
+</project>
+
