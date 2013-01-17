@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright 2008 Mike Slinn (mslinn@mslinn.com)
+ 
+Mike Slinn licenses this file to You under the Apache License, Version 2.0
+(the "License"); you may not use this file except in compliance with
+the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. 
+
+$Id: J2AS3CollectionsBenchmark.mxml 23 2009-03-04 18:42:25Z mslinn $  -->
+
+<mx:Application 
+	creationComplete="benchmark()"
+	xmlns:mx="http://www.adobe.com/2006/mxml">
+
+	<mx:Script>
+		<![CDATA[
+		    import j2as3.util.StopWatch;
+            import collection.HashMap;
+            import mx.formatters.NumberFormatter;
+		  
+			private var stopWatch:StopWatch = new StopWatch();
+			private var hashMap:HashMap = new HashMap();
+            private var numberFormatter:NumberFormatter = new NumberFormatter();
+			  
+            /** Might be a better test if it read six to ten values */
+            private function reads(readCount:int):String {
+                hashMap.put("key", "value");
+                stopWatch.startTimer();
+                for (var i:int=0; i<readCount; i++)
+                    hashMap.getItem("key");
+                return stopWatch.reportElapsedTime(numberFormatter.format(readCount) + " reads");
+            }
+
+            /** Might be a better test if it wrote six to ten values */
+            private function writes(writeCount:int):String {
+                stopWatch.startTimer();
+                for (var i:int=0; i<writeCount; i++) {
+                    hashMap.put("key", i);
+                }
+                return stopWatch.reportElapsedTime(numberFormatter.format(writeCount) + " writes");
+            }
+
+            private function benchmark():void {
+                msg.text = reads(50000) + "; ";
+                msg.text += writes(50000);
+            }
+		]]>
+	</mx:Script>
+	<mx:Label id="msg" />
+</mx:Application>
